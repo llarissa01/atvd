@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     
+
+        <h1>Programa Fuso Horário</h1>
+        <hr>
+
+        <p>Hora no Brasil(hh:mm)
+            <input type="text" id="inHora">
+
+        </p>
+
+        <button onclick="converterDuracao" id="btnDuracao">Exibir Hora na França</button>
+
+    <p id="outTitulo"></p>
+ <p id="outHora"></p>
+     
+    <img  class="img" src="./nasa-rTZW4f02zY8-unsplash.jpg" alt="" width="300px">
+
+    <script>
+        function AdicionarHora(){
+            let inTitulo = document.getElementById('inTitulo')
+            let intHora = document.getElementById('inHora')
+
+            outTitulo.textContent = Titulo
+            outHora.textContent = '${horas}'
+
+            
+
+            let btnAdicionar = document.getElementById('btnAdicionar')
+             btnAdicionar.addEventListener('click', AdicionarHora)
+            
+        }
+    </script>
+</body>
+</html>

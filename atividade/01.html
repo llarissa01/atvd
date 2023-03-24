@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+  <input type="text" id="inObjetos">
+
+   <button id="adicionar">adicionar</button>
+  <button id="ordenar">Ordenar</button>
+
+  <script>
+    let objetos = ['cadeira', 'impressora', 'garfo'];
+    const inObjetos = document.getElementById('inobjetos');
+    const adicionar = document.getElementById('adicionar');
+    const ordenar = document.getElementById('ordenar');
+
+    adicionar.addEventListener('click', function(){
+     let objeto = inObjetos.value
+     if(objeto === ''){
+     alert('informe um valor valido')
+     }else{
+      
+     if(objetos.indexOf(objeto) != -1){
+       alert('objeto ja existe no Array')
+     } else{
+        objetos.push(objeto)
+        console.log(objetos)
+        inObjetos.value = ''
+     }
+
+     }
+
+    })
+    ordenar.addEventListener('click', ()=>{
+           let ordenarobjetos = objetos.sort()
+           console.log(ordenarobjetos)
+    })
+    
+  </script>
+    
+</body>
+</html>
